@@ -1,0 +1,36 @@
+{
+  "name": "delete-watched-episodes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn clean:build && babel src --ignore src/**/__tests__ --out-dir dist --extensions '.ts,.tsx'",
+    "clean:build": "rm -rf dist",
+    "start": "babel-node --extensions '.ts,.tsx' src/index.ts",
+    "typecheck": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.9.4",
+    "trakt.tv": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^3.0.3"
+  },
+  "type-check": "tsc"
+}
